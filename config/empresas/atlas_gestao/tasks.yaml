@@ -1,0 +1,44 @@
+painel_financeiro:
+  description: |
+    Briefing da semana: {briefing}
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Utilize DADOS SIMULADOS (sinalize) para um cliente PME, monte a visão financeira da semana: fluxo de caixa projetado 30/60/90 dias, DRE gerencial resumido, ciclo financeiro (PMR/DSO), margem de contribuição,
+    e ponto de equilíbrio. Aponte 3 riscos de liquidez e 3 ações.
+  expected_output: Tabelas resumidas de fluxo 30/60/90 e DRE, indicadores calculados, 3 riscos e 3 ações.
+  agent: agente_financeiro_atlas
+  output_file: relatorios/atlas_gestao_financeira/painel_financeiro.md
+
+rotina_fiscal:
+  description: |
+    Briefing da semana: {briefing}
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Descreva a rotina da semana de captura e conciliação de NF-e: etapas, controles de validação, desduplicação, aprovações e uma lista de possíveis exceções com o tratamento de cada uma.
+    Quantifique, de forma simulada, o tempo manual gasto por etapa.
+  expected_output: Fluxo em etapas e tempo manual simulado por etapa.
+  agent: agente_fiscal_atlas
+  output_file: relatorios/atlas_gestao_financeira/rotina_fiscal.md
+
+plano_comercial:
+  description: |
+    Briefing da semana: {briefing}
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Planeje a semana comercial da Atlas Gestão Financeira: 1 carrossel de 7 slides (tema de KPIs ou DRE), 1 roteiro
+    de reel de até 35 segundos, 5 critérios de qualificação de leads e um roteiro de diagnóstico gratuito de 30 minutos.
+  expected_output: Carrossel slide a slide, roteiro de reel, critérios de qualificação e roteiro de diagnóstico.
+  agent: agente_comercial_atlas
+  output_file: relatorios/atlas_gestao_financeira/plano_comercial.md
+
+relatorio_gerencial_atlas:
+  description: |
+    Briefing da semana: {briefing}
+    Consolide o trabalho dos setores da Atlas Gestão Financeira em um relatório executivo semanal.
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Termine obrigatoriamente com a seção "Gargalos Operacionais" contendo uma tabela compacta (colunas: gargalo | horas por semana) listando as tarefas manuais, repetitivas ou propensas a erro, em ordem de impacto.
+  expected_output: Relatório executivo consolidado em markdown com síntese das áreas e seção final 'Gargalos Operacionais' contendo uma tabela compacta (gargalo | horas por semana).
+  agent: gerente_geral_atlas
+  context: [painel_financeiro, rotina_fiscal, plano_comercial]
+  output_file: relatorios/atlas_gestao_financeira/relatorio_gerencial.md

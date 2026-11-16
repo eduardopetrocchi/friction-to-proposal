@@ -1,0 +1,48 @@
+plano_conteudo:
+  description: |
+    Briefing da semana: {briefing}
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Monte o plano de conteúdo de Instagram da Clínica Essenza para a semana: 3 publicações (misture carrossel, reel e stories). Para cada uma entregue: formato,
+    pilar de conteúdo, gancho, roteiro resumido, legenda sugerida e a diretriz ética aplicada. Inclua 2 tendências de mercado do segmento que embasam as escolhas.
+    Respeite o tom da marca.
+  expected_output: Plano semanal com 3 peças detalhadas e 2 tendências de mercado, sem nenhum termo proibido
+  agent: agente_marketing_essenza
+  output_file: relatorios/clinica_essenza/plano_conteudo.md
+
+plano_atendimento:
+  description: |
+    Briefing da semana: {briefing}
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Defina a rotina de atendimento da semana: o fluxo de resposta a novos contatos (WhatsApp e simulador pré-consulta), 3 modelos de mensagem acolhedora com sugestão
+    de horários e as regras para evitar linguagem comercial. Liste também as 5 dúvidas mais prováveis e as respostas-base.
+  expected_output: Fluxo de atendimento, 3 modelos de mensagem e 5 perguntas frequentes com respostas.
+  agent: agente_agendamento_essenza
+  output_file: relatorios/clinica_essenza/plano_atendimento.md
+
+painel_operacional:
+  description: |
+    Briefing da semana: {briefing}
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Simule (deixando claro que são DADOS SIMULADOS) os indicadores da semana da Clínica Essenza: total de atendimentos, presença, ocupação das salas, faturamento por categoria,
+    retornos de 30/90 dias pendentes. Aponte 3 alertas e 3 decisões recomendadas. Registre quais partes desse acompanhamento hoje exigem trabalho manual.
+  expected_output: Tabela de KPIs simulados, 3 alertas, 3 decisões e lista de etapas manuais.
+  agent: gestor_operacional_essenza
+  output_file: relatorios/clinica_essenza/painel_operacional.md
+
+relatorio_gerencial_essenza:
+  description: |
+    Briefing da semana: {briefing}
+    Consolide o trabalho dos três setores da Clínica Essenza em um relatório gerencial da semana.
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Revise o material contra as restrições: Conformidade voluntária com a Resolução CFM nº 2.336/2023 (conteúdo exclusivamente educativo).
+    PROIBIDO usar "antes e depois", "cura definitiva", "rejuvenescimento milagroso", "promoção relâmpago",
+    preços avulsos, sorteios, gatilhos de urgência ou escassez. Condições crônicas (melasma, rosácea) têm controle, não cura.
+    Corrija ou sinalize qualquer violação. Termine obrigatoriamente com a seção "Gargalos Operacionais" contendo uma tabela compacta (colunas: gargalo | horas por semana) listando as tarefas manuais, repetitivas ou lentas que consomem tempo da equipe, em ordem de impacto.
+  expected_output: Relatório em markdown com resumo executivo, revisão de conformidade ética, prioridades da semana e a seção 'Gargalos Operacionais' contendo tabela compacta (gargalo | horas por semana).
+  agent: gerente_geral_essenza
+  context: [plano_conteudo, plano_atendimento, painel_operacional]
+  output_file: relatorios/clinica_essenza/relatorio_gerencial.md

@@ -1,0 +1,13 @@
+# Dependências principais do projeto IdeiaFlui
+crewai>=1.14.0
+crewai-tools>=1.14.0
+langgraph>=1.1.0
+langchain>=1.2.0
+langchain-core>=1.5.0
+langchain-google-genai>=4.2.0
+pydantic>=2.10.0
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+
+# Desenvolvimento e testes
+pytest>=8.0.0

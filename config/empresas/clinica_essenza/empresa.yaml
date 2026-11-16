@@ -1,0 +1,93 @@
+id: clinica_essenza
+company_name: Clínica Essenza
+nome_completo: "Clínica Essenza — Dermatologia, Cosmiatria & Estética Avançada"
+segmento: "Dermatologia, cosmiatria e estética médica avançada"
+modelo: B2C
+porte: "Clínica boutique de alto padrão"
+publico_alvo: "Pacientes que buscam dermatologia e estética médica personalizada, tratamentos de alto valor agregado, longevidade da pele e acompanhamento consultivo."
+
+marca:
+  voz_tom: "Calmo, científico, acolhedor e sóbrio; transmite autoridade médica boutique sem frieza hospitalar ou apelo comercial agressivo."
+  pilares_conteudo:
+    - "Longevidade cutânea e saúde celular"
+    - "Educação sobre condições crônicas da pele, como melasma e rosácea"
+    - "Ciência, tecnologias dermatológicas e protocolos personalizados"
+    - "Experiência do paciente e acompanhamento contínuo"
+    - "Prevenção, fotoproteção e autocuidado"
+  palavras_evitar:
+    - "cura definitiva"
+    - "rejuvenescimento milagroso"
+    - "promoção relâmpago"
+    - "descontos agressivos"
+    - "promessas de transformação instantânea"
+    - "antes e depois"
+    - "preços avulsos"
+  idioma: "Português (Brasil)"
+
+restricoes:
+  regulatorias:
+    - "Seguir as diretrizes de publicidade médica do CFM: sem promessa de resultado, sem sensacionalismo, sem 'antes e depois' e sem divulgação de preços ou promoções."
+    - "Não apresentar conteúdo como diagnóstico ou orientação médica individual; incentivar a avaliação presencial com o médico."
+    - "O parecer técnico-jurídico formal cabe ao responsável técnico; sinalizar as peças que precisam de revisão médica antes de publicar."
+    - "Tratar dados de pacientes conforme a LGPD, usando apenas dados fictícios."
+  conteudo:
+    - "Priorizar conteúdo educativo e consultivo, com tom calmo, científico e sóbrio."
+    - "Não criar urgência artificial nem apelo comercial agressivo."
+    - "Citar tecnologias e protocolos de forma descritiva, sem garantir resultados."
+  projeto:
+    - "Executar todo o trabalho de forma manual, com ferramentas básicas (documentos, planilhas e anotações internas)."
+    - "Não sugerir automação, agentes de IA ou serviços de terceiros como solução; apenas descrever o problema encontrado."
+    - "Não mencionar a IdeiaFlui nem seus serviços."
+    - "Usar somente os dados fictícios fornecidos; sinalizar a falta de informação em vez de inventá-la."
+    - "Registrar, para cada etapa, o tempo manual estimado (simulado), a frequência e o risco de erro."
+    - "Classificar cada gargalo em categorias operacionais (conteúdo, presença web, conversão, imagem ou dados e processos)."
+
+setores:
+  - agente: agente_marketing_essenza
+    area: "Marketing e conteúdo (Instagram, calendário editorial e site)"
+  - agente: agente_agendamento_essenza
+    area: "Atendimento e agendamento (WhatsApp, confirmações e retornos)"
+  - agente: gestor_operacional_essenza
+    area: "Gestão operacional e financeira (agenda, presença e faturamento)"
+  - agente: gerente_geral_essenza     # consolidador: produz o relatório gerencial
+    area: "Gerência geral e conformidade ética (CFM)"
+
+# [Reservado para evolução futura]
+# dados:
+#   diretorio: data/clinica_essenza/
+#   fontes:
+#     agenda_consultas: agenda_consultas.csv
+#     pacientes: pacientes.csv
+#     procedimentos: procedimentos.csv
+#     financeiro: financeiro.csv
+#     diretrizes_comunicacao: diretrizes_comunicacao.md
+
+# [Reservado para evolução futura]
+# kpis_referencia:
+#   - nome: "Taxa de ocupação da agenda (%)"
+#     meta: 85
+#   - nome: "Taxa de no-show (%)"
+#     meta: 8
+#   - nome: "Retorno de pacientes em 6 meses (%)"
+#     meta: 60
+#   - nome: "Tempo de resposta a novos contatos (minutos)"
+#     meta: 15
+#   - nome: "Publicações aprovadas por semana"
+#     meta: 3
+
+briefings:
+  base: "Semana típica de operação: agenda com ocupação regular, contatos de novos pacientes chegando pelo WhatsApp e pelo Instagram, calendário editorial em andamento com revisão de conformidade e rotina normal de confirmações e retornos."
+  por_cenario:
+    pico_demanda: "Semana de forte procura: aumento de contatos e pedidos de agendamento, agenda quase lotada, fila de respostas no WhatsApp e pressão para manter a qualidade do atendimento e o tom da marca."
+    fechamento_mes: "Semana de fechamento mensal: consolidar receita por procedimento, ocupação da agenda e faltas, preparar o relatório de indicadores e organizar os retornos e confirmações do mês seguinte."
+    lancamento_campanha: "Semana de divulgação de um novo protocolo ou tecnologia: produzir conteúdo educativo para Instagram e site em curto prazo, com revisão de conformidade ética, e preparar o atendimento para o aumento de dúvidas."
+
+# [Reservado para evolução futura]
+# saidas:
+#   diretorio: "outputs/{run_id}/rodada_{rodada}/clinica_essenza/"
+#   gargalo_categorias:
+#     - conteudo
+#     - presenca_web
+#     - conversao
+#     - imagem
+#     - dados_processos

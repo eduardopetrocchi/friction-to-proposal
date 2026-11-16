@@ -1,0 +1,90 @@
+id: aurora_skin
+company_name: Aurora Skin
+nome_completo: "Aurora Skin — marca-conceito de skincare botânico"
+segmento: "Skincare botânico e cosmecêutica; marca de cuidados com a pele"
+modelo: B2C
+porte: "Marca-conceito de pequeno porte (inferido)"
+publico_alvo: "Consumidores interessados em skincare botânico, clean beauty, ciência aplicada aos cuidados com a pele, proteção da barreira cutânea e autocuidado consciente."
+
+marca:
+  voz_tom: "Acolhedor, sensorial, elegante e claro; combina natureza, ciência, transparência e autocuidado consciente, sem exageros."
+  pilares_conteudo:
+    - "Ciência botânica e bioativos"
+    - "Barreira cutânea, microbioma e saúde da pele"
+    - "Autocuidado consciente e rituais simples"
+    - "Educação sobre ingredientes e formulações"
+    - "Apresentação sensorial de produtos e experiências"
+  palavras_evitar:
+    - "promessas milagrosas"
+    - "resultados garantidos"
+    - "linguagem alarmista"
+    - "alegações de eficácia sem comprovação"
+    - "estética agressiva ou sensacionalista"
+  idioma: "Português (Brasil)"
+
+restricoes:
+  regulatorias:
+    - "Cosméticos não tratam doenças: não atribuir propriedades terapêuticas ou medicamentosas aos produtos."
+    - "Alegações de eficácia só com comprovação e em linguagem moderada, respeitando as normas da ANVISA e as boas práticas de publicidade do CONAR."
+    - "Tratar dados de clientes conforme a LGPD, usando apenas dados fictícios."
+  conteudo:
+    - "Manter o tom acolhedor, sensorial e elegante, sem apelo alarmista ou estética agressiva."
+    - "Ao citar ingredientes e bioativos, explicar a função de forma clara e sem exagero."
+    - "Evitar comparações depreciativas com outras marcas ou com a aparência do consumidor."
+  projeto:
+    - "Executar todo o trabalho de forma manual, com ferramentas básicas (documentos, planilhas e anotações internas)."
+    - "Não sugerir automação, agentes de IA ou serviços de terceiros como solução; apenas descrever o problema encontrado."
+    - "Não mencionar a IdeiaFlui nem seus serviços."
+    - "Usar somente os dados fictícios fornecidos; sinalizar a falta de informação em vez de inventá-la."
+    - "Registrar, para cada etapa, o tempo manual estimado (simulado), a frequência e o risco de erro."
+    - "Classificar cada gargalo em categorias operacionais (conteúdo, presença web, conversão, imagem ou dados e processos)."
+
+setores:
+  - agente: agente_marketing_aurora
+    area: "Marketing e conteúdo (posicionamento, pauta e calendário de conteúdo)"
+  - agente: agente_ecommerce_aurora
+    area: "E-commerce e conversão (landing page, ofertas e pós-venda)"
+  - agente: agente_produto_aurora
+    area: "Produto e bioativos (revisão técnica e segurança cosmética)"
+  - agente: gerente_geral_aurora # consolidador: produz o relatório gerencial
+    area: "Gerência geral e operações da marca"
+
+# [Reservado para evolução futura]
+# dados:
+#   diretorio: data/aurora_skin/
+#   fontes:
+#     catalogo_produtos: catalogo_produtos.csv
+#     pedidos: pedidos.csv
+#     estoque: estoque.csv
+#     tickets_sac: tickets_sac.csv
+#     metricas_campanhas: metricas_campanhas.csv
+
+# [Reservado para evolução futura]
+# kpis_referencia:
+#   - nome: "Taxa de conversão da landing page (%)"
+#     meta: 2.5
+#   - nome: "Ticket médio (R$)"
+#     meta: 180
+#   - nome: "Taxa de recompra em 90 dias (%)"
+#     meta: 30
+#   - nome: "Tempo médio de resposta do SAC (horas)"
+#     meta: 4
+#   - nome: "Peças de conteúdo publicadas por semana"
+#     meta: 3
+
+briefings:
+  base: "Semana típica de operação: calendário de conteúdo regular nas redes, landing page ativa recebendo tráfego moderado, fluxo normal de pedidos e estoque estável, com atendimento de dúvidas sobre ingredientes e uso dos produtos."
+  por_cenario:
+    pico_demanda: "Semana de forte demanda: aumento súbito de pedidos e de dúvidas no SAC, risco de ruptura em produtos mais vendidos e necessidade de manter o conteúdo e a comunicação com o cliente em dia."
+    fechamento_mes: "Semana de fechamento mensal: consolidar vendas, estoque e desempenho das campanhas do mês, preparar o relatório de indicadores e planejar a pauta e as compras do mês seguinte."
+    lancamento_campanha: "Semana de lançamento de um novo produto: produzir landing page, copy, peças visuais e pauta de conteúdo em curto prazo, alinhar a mensagem ao posicionamento botânico e preparar o atendimento e o estoque para o lançamento."
+
+# [Reservado para evolução futura]
+# saidas:
+#   diretorio: "outputs/{run_id}/rodada_{rodada}/aurora_skin/"
+#   gargalo_categorias:
+#     - conteudo
+#     - presenca_web
+#     - conversao
+#     - imagem
+#     - dados_processos

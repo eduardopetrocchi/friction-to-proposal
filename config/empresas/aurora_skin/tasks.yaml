@@ -1,0 +1,45 @@
+plano_marketing:
+  description: |
+    Briefing da semana: {briefing}
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Planeje a semana de comunicação da Aurora Skin: 1 carrossel educativo (6 slides, ex.: barreira cutânea),
+    2 ideias de anúncio (formatos 1:1 e 9:16) com copy e conceito visual, e 3 legendas de posts.
+    Inclua 2 tendências do mercado de skincare botânico que embasam o plano.
+  expected_output: Roteiro do carrossel slide a slide, 2 conceitos de anúncio com copy, 3 legendas e 2 tendências.
+  agent: agente_marketing_aurora
+  output_file: relatorios/aurora_skin/plano_marketing.md
+
+plano_ecommerce:
+  description: |
+    Briefing da semana: {briefing}
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Proponha melhorias de conversão para a semana: ajuste da oferta do Kit Ritual Serenidade, 5 objeções comuns de compra com respostas, e a rotina de acompanhamento
+    de pedidos e dúvidas. Use DADOS SIMULADOS (sinalize) para estimar visitas, conversão e carrinhos abandonados.
+  expected_output: Proposta de oferta, 5 objeções com respostas, rotina de pós-venda e métricas simuladas.
+  agent: agente_ecommerce_aurora
+  output_file: relatorios/aurora_skin/plano_ecommerce.md
+
+validacao_produto:
+  description: |
+    Briefing da semana: {briefing}
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Revise tecnicamente os textos dos planos de marketing e e-commerce da Aurora Skin: aponte exageros ou promessas de eficácia, 
+    reescreva as frases problemáticas e prepare um mini-glossário (5 termos) dos bioativos para o público leigo.
+  expected_output: Lista de correções com as frases reescritas e um glossário de 5 termos.
+  agent: agente_produto_aurora
+  output_file: relatorios/aurora_skin/validacao_produto.md
+
+relatorio_gerencial_aurora:
+  description: |
+    Briefing da semana: {briefing}
+    Consolide o trabalho dos setores da Aurora Skin em um relatório semanal executivo.
+    Diretrizes e restrições obrigatórias:
+    {restricoes}
+    Termine obrigatoriamente com a seção "Gargalos Operacionais" contendo uma tabela compacta (colunas: gargalo | horas por semana) listando as tarefas manuais, repetitivas ou lentas em ordem de impacto.
+  expected_output: Relatório em markdown com resumo executivo, prioridades da semana e seção 'Gargalos Operacionais' contendo tabela compacta (gargalo | horas por semana).
+  agent: gerente_geral_aurora
+  context: [plano_marketing, plano_ecommerce, validacao_produto]
+  output_file: relatorios/aurora_skin/relatorio_gerencial.md

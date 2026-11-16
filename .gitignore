@@ -1,0 +1,38 @@
+# Ambientes Virtuais
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / otimizados / cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Variáveis de ambiente e credenciais
+.env
+.env.local
+*.env
+!.env.example
+
+# Testes e cobertura
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+*.egg-info/
+
+# Arquivos de IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs e arquivos temporários
+*.log

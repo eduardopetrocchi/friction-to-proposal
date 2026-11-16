@@ -1,0 +1,176 @@
+empresa:
+  nome: "IdeiaFlui"
+  descricao: "Estúdio de Inteligência Artificial com automação de processos, criação digital e conteúdo."
+  site: "ideiaflui.com.br"
+
+servicos:
+  - id: marketing_conteudo
+    nome: "Marketing e Conteúdo em Escala"
+    areas: [marketing]
+    resumo: "Estruturação do fluxo de conteúdo da marca, da voz e tom até a produção em escala."
+    entregas:
+      [
+        "Guia de voz e tom",
+        "Skills e prompts personalizados",
+        "Posts, carrosséis, reels e stories",
+        "Calendário editorial",
+        "Automação da produção de conteúdo",
+        "Criativos visuais para cada post",
+      ]
+  - id: landing_sites
+    nome: "Landing Pages e Sites"
+    areas: [vendas]
+    resumo: "Páginas profissionais para apresentar empresas, produtos, serviços ou campanhas."
+    entregas:
+      [
+        "Landing pages",
+        "Páginas institucionais, de serviços e de produtos",
+        "Páginas integradas ao WhatsApp",
+        "Páginas responsivas",
+      ]
+  - id: paginas_venda
+    nome: "Páginas de Venda"
+    areas: [vendas]
+    resumo: "Estruturas focadas em apresentar uma oferta com clareza e conduzir à conversão."
+    entregas:
+      [
+        "Estrutura da oferta",
+        "Copywriting e headline",
+        "Benefícios e prova social",
+        "Tratamento de objeções",
+        "Chamadas para ação",
+      ]
+  - id: conteudo_visual
+    nome: "Conteúdo Visual com IA"
+    areas: [marketing]
+    resumo: "Criação e transformação de imagens para produtos, anúncios, artigos e redes sociais."
+    entregas:
+      [
+        "Imagens publicitárias e de produtos",
+        "Capas e banners",
+        "Criativos para anúncios",
+        "Melhoria de fotografias",
+      ]
+  - id: planilhas_dados
+    nome: "Planilhas e Dados Inteligentes"
+    areas: [financas]
+    resumo: "Planilhas e dados transformados em ferramentas organizadas, automatizadas e úteis para decisão."
+    entregas:
+      [
+        "Dashboards",
+        "Automação de planilhas",
+        "Análise de dados",
+        "Indicadores e relatórios automáticos",
+        "Alertas e insights",
+      ]
+
+pacotes:
+  - id: pacote_presenca_digital
+    nome: "Página de Vendas em 10 Dias (Presença Digital & Conversão)"
+    areas: [vendas]
+    resumo: "Página profissional focada em transformar visitantes em contatos qualificados no WhatsApp."
+    prazo: "10 dias úteis"
+    investimento: "R$ 1.990"
+    entregas:
+      [
+        "Diagnóstico de 30 min e briefing de conversão",
+        "Mini brandbook de 1 página",
+        "1 página responsiva com até 8 seções",
+        "Copywriting completo",
+        "4 imagens geradas com IA",
+        "Botões de WhatsApp com mensagem pré-preenchida",
+        "Formulário que encaminha o lead por e-mail",
+        "SEO técnico básico",
+      ]
+    fora_do_escopo:
+      [
+        "Site com várias páginas, loja virtual ou checkout",
+        "Blog e SEO avançado contínuo",
+        "Gestão de tráfego pago",
+      ]
+  - id: pacote_lote_editorial
+    nome: "Lote Editorial de 30 Dias (Marketing & Conteúdo Estratégico)"
+    areas: [marketing]
+    resumo: "Presença constante e estratégica no Instagram sem montar equipe interna."
+    prazo: "10 dias úteis"
+    investimento: "R$ 1.490"
+    entregas:
+      [
+        "Guia de voz e tom sob medida",
+        "Calendário de 30 dias com 12 publicações em 4 pilares",
+        "12 peças prontas (4 carrosséis, 2 roteiros de reels, 2 sequências de stories, 4 posts estáticos)",
+        "Criativo visual com IA, legendas e hashtags",
+        "Playbook de prompts e skills",
+      ]
+    fora_do_escopo:
+      [
+        "Publicação e agendamento manual",
+        "Gestão de comunidade e SAC",
+        "Tráfego pago",
+        "Gravação ou edição de vídeo",
+        "Parecer técnico-jurídico formal (CFM, OAB)",
+      ]
+  - id: pacote_operacao_automatizada
+    nome: "Operação Automatizada em 15 Dias (Dados, Planilhas & Automação n8n)"
+    areas: [financas]
+    resumo: "Para quem perde tempo com tarefas e planilhas manuais e quer acompanhar números com alertas imediatos."
+    prazo: "15 dias úteis, a contar do recebimento de acessos e dados"
+    investimento: "R$ 2.990"
+    entregas:
+      [
+        "Diagnóstico de 1 processo crítico",
+        "Planilha base no Google Sheets com até 4 abas",
+        "1 fluxo no n8n: entrada, validação, planilha, notificação",
+        "Alertas por e-mail, Telegram ou WhatsApp",
+        "Painel com até 6 KPIs",
+        "Até 3 regras de alerta",
+        "1 modelo de relatório mensal",
+        "Documentação, export do fluxo e 1h de treinamento",
+        "30 dias de suporte",
+      ]
+    fora_do_escopo:
+      [
+        "ERP legado sem API documentada",
+        "Mais de 1 fluxo principal",
+        "Custos de VPS e de APIs de mensageria",
+      ]
+    premissas:
+      [
+        "Dicionário de dados e KPIs aprovados previamente pela cliente (1 rodada de validação).",
+        "Execução em VPS própria da cliente (ex.: cerca de R$ 30/mês) ou n8n Cloud, com esses custos pagos pela cliente.",
+        "Integrações dependem de API pública documentada; ERP proprietário legado sem API fica fora do escopo.",
+      ]
+  - id: combo_maquina_aquisicao
+    nome: "Máquina de Aquisição (Página de Vendas + Lote Editorial)"
+    areas: [vendas, marketing]
+    resumo: "Landing page de alta conversão e 1 mês de publicações estratégicas com a mensagem sincronizada."
+    prazo: "conforme os dois pacotes"
+    investimento: "R$ 2.990"
+    entregas:
+      [
+        "Tudo da Página de Vendas em 10 Dias",
+        "Tudo do Lote Editorial de 30 Dias",
+        "Copy da página sincronizada com os posts",
+      ]
+
+metodologia:
+  - etapa: "Diagnóstico & Entendimento"
+    descricao: "Mapeamos o gargalo, os objetivos de negócio e o contexto operacional."
+  - etapa: "Estratégia & Arquitetura"
+    descricao: "Desenhamos a esteira da solução, escolhendo as ferramentas mais adequadas."
+  - etapa: "Desenvolvimento & Testes"
+    descricao: "Construímos, iteramos e validamos fluxos e interfaces sob critérios de qualidade."
+  - etapa: "Entrega & Operação"
+    descricao: "Entregamos a solução validada, documentada e pronta para uso na rotina."
+
+condicoes_comerciais:
+  pagamento: "PIX 50/50 (50% de entrada e 50% na aprovação da entrega) ou até 3x sem juros no cartão de crédito."
+  garantias:
+    [
+      "Garantia de escopo: qualquer item acordado e não entregue é concluído sem custo adicional.",
+      "Propriedade intelectual: código, domínio, artes em PNG e fluxos JSON pertencem ao cliente no encerramento.",
+    ]
+
+contatos:
+  - email: atendimento@ideiaflui.com.br
+  - whatsapp: "48991633122"

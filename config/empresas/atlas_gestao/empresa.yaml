@@ -1,0 +1,92 @@
+id: atlas_gestao_financeira
+company_name: Atlas Gestão
+nome_completo: "Atlas Gestão — BPO Financeiro, Controladoria e Processos para PMEs"
+segmento: "BPO financeiro, controladoria, inteligência financeira e automação de processos"
+modelo: B2B
+porte: "Consultoria especializada voltada a pequenas e médias empresas; porte da própria empresa não informado"
+publico_alvo: "Sócios, fundadores, diretores e executivos de pequenas e médias empresas que precisam organizar o financeiro, obter previsibilidade de caixa, estruturar indicadores e automatizar rotinas operacionais."
+
+marca:
+  voz_tom: "Sério, técnico, analítico e direto; comunica precisão, segurança, governança e eficiência com linguagem executiva."
+  pilares_conteudo:
+    - "Gestão financeira, fluxo de caixa e previsibilidade de liquidez"
+    - "DRE gerencial, indicadores e controladoria"
+    - "BPO financeiro e terceirização de rotinas"
+    - "Automação de processos, NF-e e conciliação"
+    - "Governança, eficiência operacional e tomada de decisão"
+    - "Educação financeira para sócios e lideranças de PMEs"
+  palavras_evitar:
+    - "promessas de resultados garantidos"
+    - "jargões sem explicação"
+    - "linguagem vaga ou excessivamente informal"
+    - "sensacionalismo"
+    - "garantias de blindagem tributária"
+  idioma: "Português (Brasil)"
+
+restricoes:
+  regulatorias:
+    - "Não prometer economia tributária, blindagem fiscal ou resultados financeiros garantidos."
+    - "Não substituir parecer contábil, jurídico ou tributário; indicar validação por profissional habilitado quando o tema exigir."
+    - "Tratar dados de clientes e documentos fiscais conforme a LGPD, usando apenas dados fictícios."
+  conteudo:
+    - "Explicar siglas e jargões financeiros na primeira menção (DRE, PMR, NF-e, BPO)."
+    - "Manter linguagem executiva, técnica e direta, sem sensacionalismo."
+    - "Sustentar indicadores e conclusões em números calculados a partir dos dados fornecidos."
+  projeto:
+    - "Executar todo o trabalho de forma manual, com ferramentas básicas (documentos, planilhas e anotações internas)."
+    - "Mesmo oferecendo automação como serviço aos clientes, a operação interna da Atlas nesta simulação é manual."
+    - "Não sugerir automação, agentes de IA ou serviços de terceiros como solução; apenas descrever o problema encontrado."
+    - "Não mencionar a IdeiaFlui nem seus serviços."
+    - "Usar somente os dados fictícios fornecidos; sinalizar a falta de informação em vez de inventá-la."
+    - "Registrar, para cada etapa, o tempo manual estimado (simulado), a frequência e o risco de erro."
+    - "Classificar cada gargalo em categorias operacionais (conteúdo, presença web, conversão, imagem ou dados e processos)."
+
+setores:
+  - agente: agente_fiscal_atlas
+    area: "Fiscal (captura e conciliação de NF-e)"
+  - agente: agente_comercial_atlas
+    area: "Comercial B2B (conteúdo, qualificação de leads e diagnóstico)"
+  - agente: agente_financeiro_atlas
+    area: "Financeiro e controladoria (fluxo de caixa, DRE e indicadores)"
+  - agente: gerente_geral_atlas # consolidador: produz o relatório gerencial
+    area: "Gerência geral e consolidação estratégica"
+
+# [Reservado para evolução futura]
+# dados:
+#   diretorio: data/atlas_gestao_financeira/
+#   fontes:
+#     notas_fiscais: notas_fiscais.csv
+#     fluxo_caixa: fluxo_caixa.csv
+#     contas_receber: contas_receber.csv
+#     carteira_clientes: carteira_clientes.csv
+#     leads: leads.csv
+
+# [Reservado para evolução futura]
+# kpis_referencia:
+#   - nome: "PMR - prazo médio de recebimento (dias)"
+#     meta: 30
+#   - nome: "Inadimplência (% da carteira)"
+#     meta: 5
+#   - nome: "NF-e conciliadas no prazo (%)"
+#     meta: 98
+#   - nome: "Margem operacional gerencial (%)"
+#     meta: 18
+#   - nome: "Leads qualificados por semana"
+#     meta: 5
+
+briefings:
+  base: "Semana típica de operação: volume regular de NF-e de entrada e saída a capturar e conciliar, carteira de clientes estável, contas a receber com poucos atrasos e demanda comercial regular, com leads chegando pelo conteúdo e por indicação."
+  por_cenario:
+    pico_demanda: "Semana de forte demanda: entrada de novos clientes acima da capacidade usual, aumento de notas a processar e vários pedidos de diagnóstico ao mesmo tempo, pressionando prazos de todos os setores."
+    fechamento_mes: "Semana de fechamento mensal: pico de NF-e a conciliar, prazo apertado para DRE gerencial e fluxo de caixa, cobranças pendentes e relatórios a entregar aos clientes."
+    lancamento_campanha: "Semana de lançamento de campanha comercial: necessidade de produzir conteúdo extra sobre KPIs e DRE, qualificar um volume maior de leads e conduzir mais diagnósticos gratuitos."
+
+# [Reservado para evolução futura]
+# saidas:
+#   diretorio: "outputs/{run_id}/rodada_{rodada}/atlas_gestao_financeira/"
+#   gargalo_categorias:
+#     - conteudo
+#     - presenca_web
+#     - conversao
+#     - imagem
+#     - dados_processos
